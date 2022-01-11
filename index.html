@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fotonia</title>
+    <link rel="icon" href="https://icon-library.com/images/icon-png/icon-png-17.jpg">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/slick-1.8.1/slick/slick.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <a id="scrollTopBtn"></a>
+    <div class="side-bar" id="side-bar">
+        <div class="close-sb">
+            <span onclick="closeSideBar()" class="btn-close-sb">✖</span>
+        </div>
+        <nav class="menu-sb">
+            <ul class="menu-list-sb" id="menu-list-sb">
+                <li class="menu-item-sb">
+                    <a href="#" onclick="hideAndShowHome()" class="menu-item-link-sb sb-home">Home <i class="fa fa-chevron-down" id="arw-home"></i></a>
+                    <div class="dropdown-home-sb dropdown-sb" style="display: none;">
+                        <a href="#">Home 1</a>
+                        <a href="#">Home 1 w/ content</a>
+                        <a href="#">Home 2</a>
+                        <a href="#">Home 3</a>
+                        <a href="#">Home 3 w/ content</a>
+                        <a href="#">Home 4</a>
+                        <a href="#">Home 5</a>
+                        <a href="#">Home 6</a>
+                        <a href="#">Top Header 2</a>
+                        <a href="#">Top Header 3</a>
+                    </div>
+                </li>
+                <li class="menu-item-sb">
+                    <a href="#" onclick="hideAndShowPortfolio()" class="menu-item-link-sb sb-portfolio">Portfolio <i class="fa fa-chevron-down" id="arw-portfolio"></i></a></a>
+                    <div class="dropdown-portfolio-sb dropdown-sb" style="display: none;">
+                        <a href="#">Albums v1 2 Cols</a>
+                        <a href="#">Albums v1 3 Cols</a>
+                        <a href="#">Albums v1 4 Cols</a>
+                        <a href="#">Albums v1 Full Screen</a>
+                        <a href="#">Albums v2 2 Cols</a>
+                        <a href="#">Albums v2 3 Cols</a>
+                        <a href="#">Albums v2 4 Cols</a>
+                        <a href="#">Albums v2 Full Screen</a>
+                    </div>
+                </li>
+                <li class="menu-item-sb">
+                    <a href="#" onclick="hideAndShowGalleries()" class="menu-item-link-sb">Galleries <i class="fa fa-chevron-down" id="arw-galleries"></i></a></a>
+                    <div class="dropdown-galleries-sb dropdown-sb" style="display: none;">
+                        <a href="#">Gallery Masonry</a>
+                        <div class="gl-fw-sb">
+                            <a href="#">Full Width</a>
+                        </div>
+                        <a href="#">Gallery 1-2 Cols</a>
+                        <a href="#">Gallery 3 Cols</a>
+                        <div class="gl-fw-sb">
+                            <a href="#">Full Width</a>
+                        </div>
+                        <a href="#">Gallery 4 Cols</a>
+                        <div class="gl-fw-sb">
+                            <a href="#">Full Width</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu-item-sb">
+                    <a href="#" onclick="hideAndShowBlog()" class="menu-item-link-sb">Blog <i class="fa fa-chevron-down" id="arw-blog"></i></a></a>
+                    <div class="dropdown-blog-sb dropdown-sb" style="display: none;">
+                        <a href="#">Blog List</a>
+                        <div class="bl-fw-sb">
+                            <a href="#">Blog List FW</a>
+                        </div>
+                        <a href="#">Blog Grid 2 Cols</a>
+                        <div class="bl-fw-sb">
+                            <a href="#">Blog Grid 2 Cols FW</a>
+                        </div>
+                        <a href="#">Blog Grid 3 Cols</a>
+                        <a href="#">Blog Classic</a> 
+                    </div>
+                </li>
+                <li class="menu-item-sb">
+                    <a href="#" onclick="hideAndShowPages()" class="menu-item-link-sb">Pages <i class="fa fa-chevron-down" id="arw-pages"></i></a></a>
+                    <div class="dropdown-pages-sb dropdown-sb" style="display: none;">
+                        <a href="#">About Me</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Pricing</a>
+                        <a href="#">Contact 2</a>
+                        <a href="#">FAQ Page</a>
+                    </div>
+                </li>
+                <li class="menu-item-sb">
+                    <a href="#" class="menu-item-link-sb">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="contact-sb">
+            <p>contact@example.com</p>
+            <p>+1 800 000 111</p>
+        </div>
+        <div class="social-sb">
+            <ul class="list-social lsb">
+                <li class="social-facebook social-item social-item-sb">
+                    <a class="social-link" href="">
+                        <i class="fa fa-facebook sc facebook"></i>
+                    </a>
+                </li>
+                <li class="social-twitter social-item social-item-sb">
+                    <a class="social-link" href="">
+                        <i class="fa fa-twitter sc twitter"></i>
+                    </a>
+                </li>
+                <li class="social-instagram social-item social-item-sb">
+                    <a class="social-link" href="">
+                        <i class="fa fa-instagram sc instagram"></i>
+                    </a>
+                </li>
+                <li class="social-pinterest social-item social-item-sb">
+                    <a class="social-link" href="">
+                        <i class="fa fa-pinterest sc pinterest"></i>
+                    </a>
+                </li>
+             </ul>
+        </div>
+    </div>
+    <header>
+        <div class="header-top">
+            <div class="logo-1">
+                <a class="logo-1-link" href="">
+                    <img class="logo-1-img" src="https://public-assets.envato-static.com/assets/logos/envato_market-a5ace93f8482e885ae008eb481b9451d379599dfed24868e52b6b2d66f5cf633.svg" height="18px" width="152px">
+                </a>
+            </div>
+            <div class="buy-now">
+                <button class="btn-buy-now">Buy now</button>
+            </div>
+        </div>
+        <div class="header-body" id="navbar">
+            <div onclick="showSideBar()" class="btn-show-sb" id="btn-show-sb">
+                <span class="line-1 line-btn"></span>
+                <span class="line-2 line-btn"></span>
+                <span class="line-3 line-btn"></span>
+            </div>
+            <div class="logo-2" id="logo-2">
+                <a class="logo-2-link" href="">
+                    <img src="/img/fotonia-logo.png" height="58.49px" width="110px">
+                </a>
+            </div>
+            <nav class="menu">
+                <ul class="menu-list" id="menu-list">
+                    <li class="menu-item mih">
+                        <a class="menu-item-link mi-home">Home</a>
+                        <p class="underline underline-home"></p>
+                        <div class="dropdown-home dropdown">
+                            <a href="#">Home 1</a>
+                            <a href="#">Home 1 w/ content</a>
+                            <a href="#">Home 2</a>
+                            <a href="#">Home 3</a>
+                            <a href="#">Home 3 w/ content</a>
+                            <a href="#">Home 4</a>
+                            <a href="#">Home 5</a>
+                            <a href="#">Home 6</a>
+                            <a href="#">Top Header 2</a>
+                            <a href="#">Top Header 3</a>
+                        </div>
+                    </li>
+                    
+                    <li class="menu-item mg mip">
+                        <a class="menu-item-link mi-portfolio">Portfolio</a>
+                        <p class="underline underline-portfolio"></p>
+                        <div class="dropdown-portfolio dropdown">
+                            <a href="#">Albums v1 2 Cols</a>
+                            <a href="#">Albums v1 3 Cols</a>
+                            <a href="#">Albums v1 4 Cols</a>
+                            <a href="#">Albums v1 Full Screen</a>
+                            <a href="#">Albums v2 2 Cols</a>
+                            <a href="#">Albums v2 3 Cols</a>
+                            <a href="#">Albums v2 4 Cols</a>
+                            <a href="#">Albums v2 Full Screen</a>
+                        </div>
+                    </li>
+                    
+                    <li class="menu-item mg mig">
+                        <a class="menu-item-link mi-galleries">Galleries</a>
+                        <p class="underline underline-galleries"></p>
+                        <div class="dropdown-galleries dropdown">
+                            <a href="#" class="gallary-1">Gallery Masonry</a>
+                            <div class="full-width-1 dropdown-s">
+                                <a href="#">Full Width</a>
+                            </div>
+                            <a href="#">Gallery 1-2 Cols</a>
+                            <a href="#" class="gallary-3">Gallery 3 Cols</a>
+                            <div class="full-width-2 dropdown-s">
+                                <a href="#">Full Width</a>
+                            </div>
+                            <a href="#" class="gallary-4">Gallery 4 Cols</a>
+                            <div class="full-width-3 dropdown-s">
+                                <a href="#">Full Width</a>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="menu-item mg mib">
+                        <a class="menu-item-link mi-blog">Blog</a>
+                        <p class="underline underline-blog"></p>
+                        <div class="dropdown-blog dropdown">
+                            <a href="#" class="blog-1">Blog List</a>
+                            <div class="blog-fw-1 dropdown-s">
+                                <a href="#">Blog List FW</a>
+                            </div>
+                            <a href="#" class="blog-2">Blog Grid 2 Cols</a>
+                            <div class="blog-fw-2 dropdown-s">
+                                <a href="#">Blog Grid 2 Cols FW</a>
+                            </div>
+                            <a href="#">Blog Grid 3 Cols</a>
+                            <a href="#">Blog Classic</a> 
+                        </div>
+                    </li>
+                    
+                    <li class="menu-item mg mipg">
+                        <a class="menu-item-link mi-pages">Pages</a>
+                        <p class="underline underline-pages"></p>
+                        <div class="dropdown-pages dropdown">
+                            <a href="#">About Me</a>
+                            <a href="#">About Us</a>
+                            <a href="#">Pricing</a>
+                            <a href="#">Contact 2</a>
+                            <a href="#">FAQ Page</a>
+                        </div>
+                    </li>
+                    
+                    <li class="menu-item mg mic">
+                        <a class="menu-item-link mi-contact">Contact</a>
+                        <p class="underline underline-contact"></p>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="social" id="social">
+                <ul class="list-social">
+                    <li class="social-facebook social-item">
+                        <a class="social-link" href="">
+                            <i class="fa fa-facebook sc facebook"></i>
+                        </a>
+                    </li>
+                    <li class="social-twitter social-item">
+                        <a class="social-link" href="">
+                            <i class="fa fa-twitter sc twitter"></i>
+                        </a>
+                    </li>
+                    <li class="social-instagram social-item">
+                        <a class="social-link" href="">
+                            <i class="fa fa-instagram sc instagram"></i>
+                        </a>
+                    </li>
+                    <li class="social-pinterest social-item">
+                        <a class="social-link" href="">
+                            <i class="fa fa-pinterest sc pinterest"></i>
+                        </a>
+                    </li>
+                 </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="main-top">
+            <div class="container">
+                <h1 class="title-heading">Welcome to Fotonia</h1>
+                <p class="title-heading-bottom">We are an award winning photography studio. We are dedicated to capture timeless images.</p>
+            </div>
+        </section>
+        <section class="slide" id="slide">
+            <div class="slide-s" id="slide-s">
+                <div class="img-item-s" id="img-item-s">
+                    <div class="image">
+                        <img src="/img/a.jpg">
+                    </div>
+                    <div class="content-image">
+                        <h2>
+                            <a href="">New York</a>
+                        </h2>
+                        <p>PORTRAITS</p>
+                    </div>
+                </div>
+                <div class="img-item-s">
+                    <div class="image">
+                        <img src="/img/b.jpg">
+                    </div>
+                    <div class="content-image">
+                        <h2>
+                            <a href="">Street Photos</a>
+                        </h2>
+                        <p>PORTRAITS</p>
+                    </div>
+                </div>
+                <div class="img-item-s">
+                    <div class="image">
+                        <img src="/img/c.jpg">
+                    </div>
+                    <div class="content-image">
+                        <h2>
+                            <a href="">Black & White</a>
+                        </h2>
+                        <p>PORTRAITS</p>
+                    </div>
+                </div>
+                <div class="img-item-s">
+                    <div class="image">
+                        <img src="/img/d.jpg">
+                    </div>
+                    <div class="content-image">
+                        <h2>
+                            <a href="">Seaside</a>
+                        </h2>
+                        <p>NATURE</p>
+                    </div>
+                </div>
+                <div class="img-item-s">
+                    <div class="image">
+                        <img src="/img/e.jpg">
+                    </div>
+                    <div class="content-image">
+                        <h2>
+                            <a href="">Landscapes</a>
+                        </h2>
+                        <p>NATURE</p>
+                    </div>
+                </div>
+                <div class="img-item-s">
+                    <div class="image">
+                        <img src="/img/f.jpg">
+                    </div>
+                    <div class="content-image">
+                        <h2>
+                            <a href="">Sara & John</a>
+                        </h2>
+                        <p>WEDDINGS</p>
+                    </div>
+                </div>
+                <div class="img-item-s">
+                    <div class="image">
+                        <img src="/img/g.jpg">
+                    </div>
+                    <div class="content-image">
+                        <h2>
+                            <a href="">Alice & Mike</a>
+                        </h2>
+                        <p>WEDDINGS</p>
+                    </div>
+                </div>
+                <div class="img-item-s">
+                    <div class="image">
+                        <img src="/img/h.jpg">
+                    </div>
+                    <div class="content-image">
+                        <h2>
+                            <a href="">Jane & Paul</a>
+                        </h2>
+                        <p>WEDDINGS</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="service">
+            <div class="container">
+                <div class="service-body">
+                    <div class="photography service-item">
+                        <i class="fa fa-camera-retro fa-3x icon"></i>
+                        <h4 class="title-h4">PHOTOGRAPHY</h4>
+                        <p class="description">Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis.</p>
+                    </div>
+                    <div class="film service-item">
+                        <i class="fa fa-video-camera fa-3x icon"></i>
+                        <h4 class="title-h4">FILM</h4>
+                        <p class="description">Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis.</p>
+                    </div>
+                    <div class="post-process service-item">
+                        <i class="fa fa-paint-brush fa-3x icon"></i>
+                        <h4 class="title-h4">POST PROCESS</h4>
+                        <p class="description">Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="images">
+            <div class="container">
+                <div class="image-item">
+                    <img src="/img/1.jpg" class="img-fluid" height="990" width="660">
+                    <div class="content-img content-img_1">
+                        <h2 class="title-img">We love what we do</h2>
+                        <p class="desc-img">Lorem ipsum dolor sit amet, te exerci doming mea. Ius erant diceret noluisse ea, an mea latine efficiendi, ius ut iudico nostrum indoctum. Ullum vulputate per ut. Sed omnis constituto at, est te magna persius.</p>
+                        <p class="desc-img">Legere everti cu sit. Vis eu fuisset oportere, vix ei alia indoctum, dicat invidunt at per. At his nibh eros reque, ius efficiendi signiferumque ea. Duo novum abhorreant.</p>
+                        <button class="btn-learn-more">Learn More</button>
+                    </div>
+                </div>
+                <div class="image-item">
+                    <div class="content-img content-img_2">
+                        <h2 class="title-img">It's all about you</h2>
+                        <p class="desc-img">Lorem ipsum dolor sit amet, te exerci doming mea. Ius erant diceret noluisse ea, an mea latine efficiendi, ius ut iudico nostrum indoctum. Ullum vulputate per ut. Sed omnis constituto at, est te magna persius.</p>
+                        <p class="desc-img">Legere everti cu sit. Vis eu fuisset oportere, vix ei alia indoctum, dicat invidunt at per. At his nibh eros reque, ius efficiendi signiferumque ea. Duo novum abhorreant.</p>
+                        <button class="btn-learn-more">Learn More</button>
+                    </div>
+                    <img src="/img/2.jpg" class="img-fluid" height="990" width="660">
+                </div>
+            </div>
+        </section>
+        <section class="partners">
+            <div class="partner-body">
+                <h4 class="title-partners">MY PARTNERS</h4>
+                <p class="desc-partners">I collaborate with amazing brands and agencies</p>
+                <div class="img-partners-group">
+                    <img src="/img/p1.png" class="img-partners first-partner" height="90px" width="150px">
+                    <img src="/img/p2.png" class="img-partners mid-partner" height="90px" width="150px">
+                    <img src="/img/p3.png" class="img-partners mid-partner" height="90px" width="150px">
+                    <img src="/img/p4.png" class="img-partners last-partner" height="90px" width="150px">
+                </div>
+            </div>
+        </section>
+        <section class="info">
+            <div class="address info-item">
+                <h4 class="title-info">ADDRESS</h4>
+                <p class="desc-info">40 Park Ave, Brooklyn, <br>
+                    New York 70250</p>
+            </div>
+            <div class="phone info-item">
+                <h4 class="title-info">PHONE</h4>
+                <p class="desc-info">1-800-111-2222</p>
+            </div>
+            <div class="email info-item">
+                <h4 class="title-info">EMAIL</h4>
+                <p class="desc-info">contact@example.com</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="album">
+                <img class="album-item" src="https://matchthemes.com/demowp/fotonia/wp-content/uploads/sb-instagram-feed-images/156868825_143347307657413_27011188971515420_nlow.jpg" height="165px" width="165px">
+                <img class="album-item" src="https://matchthemes.com/demowp/fotonia/wp-content/uploads/sb-instagram-feed-images/157676486_192081618923494_6232268817957443723_nlow.jpg" height="165px" width="165px">
+                <img class="album-item" src="https://matchthemes.com/demowp/fotonia/wp-content/uploads/sb-instagram-feed-images/157335728_131845592186117_997210521576511087_nlow.jpg" height="165px" width="165px">
+                <img class="album-item" src="https://matchthemes.com/demowp/fotonia/wp-content/uploads/sb-instagram-feed-images/157033867_439513020495635_514319514856798527_nlow.jpg" height="165px" width="165px">
+                <img class="album-item" src="https://matchthemes.com/demowp/fotonia/wp-content/uploads/sb-instagram-feed-images/156673844_817657968823586_5940851470168064623_nlow.jpg" height="165px" width="165px">
+                <img class="album-item" src="https://matchthemes.com/demowp/fotonia/wp-content/uploads/sb-instagram-feed-images/157346955_874729569971679_1010064583557438001_nlow.jpg" height="165px" width="165px">
+                <img class="album-item" src="https://matchthemes.com/demowp/fotonia/wp-content/uploads/sb-instagram-feed-images/156620412_2874985996093076_6812370245932026144_nlow.jpg" height="165px" width="165px">
+                <img class="album-item" src="https://matchthemes.com/demowp/fotonia/wp-content/uploads/sb-instagram-feed-images/157638776_350087649577063_5408714711201321750_nlow.jpg" height="165px" width="165px">
+            </div>
+            <div class="copyright">
+                2021 © Fotonia. Designed by MatchThemes.
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>
