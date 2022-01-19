@@ -1251,6 +1251,7 @@ footer {
   }
   .title-heading {
     overflow-x: hidden;
+    font-size: 30px;
   }
   .title-heading,
   .title-heading-bottom {
@@ -1346,6 +1347,10 @@ footer {
   .desc-partners {
     font-size: 1.1em;
     margin-bottom: 15%;
+  }
+  .title-img {
+    font-size: 25px;
+    margin-bottom: 0;
   }
   .img-partners {
     margin: 2% 5%;
